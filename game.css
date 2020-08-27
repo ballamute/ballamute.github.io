@@ -1,0 +1,28 @@
+body {   
+background-image: url(wallpaper.jpg);      
+background-position: center center;      
+background-repeat: no-repeat;      
+background-attachment: fixed;      
+background-size: cover;      
+ }
+@font-face {
+    font-family: fallout; 
+    src: url(fallout.ttf); 
+   }
+   h1 {
+    font-family: fallout, 'Comic Sans MS', cursive;
+   }
+@font-face {
+    font-family: fallout2; 
+    src: url(fallout2.ttf); 
+   }
+   h2 {
+    font-family: fallout2, 'Comic Sans MS', cursive;
+   }
+ a { 
+    text-decoration: none;
+   } 
+table {
+    background: #C09160; 
+    color: #FFFFFF; 
+   }

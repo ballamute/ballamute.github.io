@@ -1,0 +1,87 @@
+body {   
+background-image: url(wallpaper.jpg);      
+background-position: center center;      
+background-repeat: no-repeat;      
+background-attachment: fixed;      
+background-size: cover;      
+ }
+@font-face {
+    font-family: fallout; 
+    src: url(fallout.ttf); 
+   }
+   h1 {
+    font-family: fallout, 'Comic Sans MS', cursive;
+   }
+@font-face {
+    font-family: fallout2; 
+    src: url(fallout2.ttf); 
+   }
+   h2 {
+    font-family: fallout2, 'Comic Sans MS', cursive;
+   }
+ a { 
+    text-decoration: none;
+   } 
+li {
+    list-style-type: none; 
+   }
+
+.topmenu {
+  text-align: center;
+  padding: 10px 0;
+}
+.topmenu > li {
+  display: inline-block;
+  position: relative;
+}
+.topmenu > li:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 1px;
+  height: 12px;
+  background: #FFFFFF;
+  top: 16px;
+  box-shadow: 4px -2px 0 #d2d2d2;
+  transform: rotate(30deg);
+}
+.topmenu > li:last-child:after {
+  background: none;
+  box-shadow: none;
+}
+.topmenu > li > a {
+  padding: 12px 26px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: fallout2;
+}
+.topmenu li a:hover { color: #c0a97a; }
+.submenu {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  width: 210px;
+  margin-left: -105px;
+  background: #fafafa;
+  border: 1px solid #ededed;
+  z-index: 5;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(.8);
+  transition: .4s ease-in-out;
+}
+.submenu li a {
+  padding: 10px 0;
+  margin: 0 10px;
+  border-bottom: 1px solid #efefef;
+  font-size: 15px;
+  color: #C09160;
+  font-family: fallout2;
+}
+.topmenu > li:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
